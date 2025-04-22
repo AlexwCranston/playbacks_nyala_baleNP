@@ -1,10 +1,9 @@
-setwd("C:/Users/alexw/OneDrive/Documents/PHD/Bale Mountains Playback Experiments/Data")
 
 library(tidyr)
 library(dplyr)
 library(ggplot2)
 
-FID <- read.csv("FID Raw Data.csv")
+FID <- read.csv("Data/FID Raw Data.csv")
 glimpse(FID)
 
 
@@ -27,7 +26,7 @@ plot(FID$Longitude,FID$Latitude)
 
 ## Playbacks
 
-playback.data <- read.csv("Raw Data_Playbacks.csv")
+playback.data <- read.csv("Data/Raw Data_Playbacks.csv")
 glimpse(playback.data)
 
 # What sex were playbacks done on?
